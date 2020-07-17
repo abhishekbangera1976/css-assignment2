@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Board</title>
+    <link rel="stylesheet" href="C:\Users\abhis\Desktop\abhishek html\app.css"> 
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+</head>
+<style>
+  
+    .flex-container {
+    display:flex;          
+    flex-direction:row;
+    align-self: stretch;
+    max-width: fit-content;
+    max-height:fit-content;
+    margin-top: 200px;
+  
+   
+    }
+    .flex-container > div{
+    background-color: rgba(218, 216, 216,0.9);
+    margin: 5px;
+    border-color:white;
+    border-radius: 5px;
+    padding:12px ;
+    }
+    
+    .child>button:hover,.child>input:hover{
+        opacity: 0.5;
+        background-color:whitesmoke;
+        cursor: pointer;  
+    }
+
+    .heading1{
+    overflow:hidden;
+    text-align:center;  
+    color: white;
+    background-color: rgba(110, 224, 224, 0.7) ;
+    top:1px;
+    width: 100%;
+    position: fixed;
+    margin: auto;
+   /* opacity:0.7 ;*/
+    }
+
+    .heading2{
+    overflow:hidden;
+    text-align:left;  
+    color: white;
+    background-color:rgba(187, 185, 180, 0.5);
+    top:60px;
+    width: 100%;
+    position: fixed;
+    margin: auto;    
+    }
+    
+    .home{float: left; margin:5px}
+
+    .list{float: left;margin:5px}
+
+    .user{float: right;margin:5px}
+
+    .add{float: right;margin:5px}
+    
+    .box{float:left;margin:5px}
+
+    .menu{float: right;margin:5px}
+
+    .box>input:focus{
+        color: white;
+    }
+    .box:hover,.home:hover,.list:hover,.user:hover,.add:hover{
+
+        opacity: 0.5;
+        background-color:rgba(110, 224,224,0.7);
+        cursor:pointer
+    }
+
+    .menu:hover{
+        
+        opacity: 0.5;
+        background-color:rgba(187, 185, 180, 0.5);
+        cursor:pointer
+    }
+   
+    
+    
+</style>
+<body>
+      
+    <div class="heading1">
+     <h3>
+         <button class="home"
+         type ="submit"
+          style="background-color: rgba(110, 224,224,0.7);
+        color: white;
+        border:rgba(110, 224, 224,0.7) ;" >  
+            <i class="fas fa-home fa-1x"></i>
+         </button>
+         
+         <button type="submit" 
+         class="list" 
+         style="background-color: rgba(110, 224, 224,0.7);
+         color: white;
+        border:rgba(110, 224, 224,0.7) ;" >  
+            <i class="fas fa-list fa-1x"></i> Boards
+         </button>
+
+
+         <button type="submit" 
+         class="add" 
+         style="background-color: rgba(110, 224, 224,0.7);
+         color: white;
+        border:rgba(110, 224, 224,0.7) ;" >  
+            <i class="fas fa-plus fa-1x"></i> 
+         </button>
+         
+         <button type="submit" 
+         class="user" 
+         style="background-color: rgba(110, 224, 224,0.7);
+         color: white;
+        border:rgba(110, 224, 224,0.7) ;" >  
+            <i class="fas fa-user fa-1x"></i> 
+         </button>
+
+         <input class="box" type="text" style="background-color:rgba(110, 224, 224,0.7);">
+
+          Tralala
+        </h3>
+    </div>
+    <div class="heading2">
+        <h3>
+            
+            <button type="submit" 
+         class="menu" 
+         style="background-color: rgba(187, 185, 180, 0.5);
+         color: white;
+        border:rgba(187, 185, 180, 0.5) ;" >  
+            <i class="fas  fa-ellipsis-v fa-1x">
+
+            </i> 
+            Show menu
+         </button>
+            Frontend Training</h3>
+    </div>
+        
+
+    <div class="flex-container">
+    <div class="child">To Do <br>
+    <input type="search" placeholder="Learn HTML" >
+    </input>  
+    <br>
+    <input type="search" placeholder="Learn CSS"></input><br>
+    <input type="search" placeholder="Learn Javascript"></input><br>
+    <button type="button" style="background-color: rgb(218, 216, 216);">+Add another card</button>
+     </div>
+
+    <div class="child">Doing<br>
+    <input type="search" placeholder="Prepare resume"></input><br>
+    <input type="search" placeholder="Enter a title for this card"></input><br>
+    <br>
+    <button type="button" style="background-color: olive; font-size: large; color: white;">Add Card</button><i class="fas fa-times" style="margin:5px ;"></i>
+    </div>
+
+    <div class="child">Testing/Verifying<br>
+    <input type="search" placeholder="Twitter app frontend"><button type="button" style="background-color: rgb(218, 216, 216);">+Add another card</button> 
+    </div>
+
+    <div class="child">Deploying<br>
+        <input type="search" placeholder="Twitter app backend"><button type="button" style="background-color: rgb(218, 216, 216);">+Add another card</button> 
+        </div>
+
+    <div class="child">Done
+         <br>
+        <button type="button" style="background-color: rgb(218, 216, 216);">+Add card</button></div>
+
+    <div class="child">
+        <br>
+        <button type="button" style="background-color: rgb(218, 216, 216);">+Add another list</button></div>
+    
+    <div class="child">
+        <input type="search" placeholder="Enter list tiile...."> 
+        <br>
+        <button type="button"style="background-color: olive; color: white;">add another card</button></div>
+    
+          
+   
+</div>
+</body>
+</html>
